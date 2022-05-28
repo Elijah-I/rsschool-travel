@@ -32,6 +32,7 @@ body {
 .container {
     max-width: 1440px;
     margin: 0 auto;
+    padding: 0px 120px;
 }
 
 html {
@@ -41,42 +42,49 @@ html {
 /*Start header styles*/
 
 header {
-    margin: 0;
-    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     background-color:rgba(242, 120, 92, 0.7);
     box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
-    min-height: 90px;
+    padding-bottom: 25px;
 }
 
 .header-container {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
-    margin: 0;
-    padding: 0;
+    justify-content: space-between;
+    padding-top: 25px
 }
 
-.header-logo {
-    width: 216px;
-    height: 31px;
-    margin: 25px 0px 34px 120px;
+.header-list {
+    display: flex;
+    flex-wrap: wrap;
 }
 
+.header-item {
+    margin-right: 42px;
+}
+
+.header-item:last-child {
+    margin-right: 0px;
+}
+/*
 .nav-list {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: flex-end;
     list-style: none;
     max-width: 527px;
-    margin: 35px 0px 34px 158px;
-    padding: 0;
 }
+*/
 
 /*Изменить паддинги и высоту строки*/
-.nav-link {
+.header-link {
     padding: 0;
     line-height: 50px;
-    transition: .3s;
     font-family: Red Hat Text;
     font-size: 16px;
     font-weight: 500;
@@ -86,17 +94,11 @@ header {
     color:#ffffff;
 }
 
-.nav-link:hover, .nav-link:focus, .nav-link:active {
+.header-link:hover, .header-link:focus, .header-link:active {
     opacity: 0.75;
+    transition: .3s;
   }
 
-.nav-item {
-    margin-right: 42px;
-}
-
-.nav-item:last-child {
-    margin-right: 0px;
-}
 
 .button {
     background: #0D606F;
@@ -106,7 +108,6 @@ header {
     font-style: normal;
     font-weight: 500;
     color: #FFFFFF;
-    margin: 25px 120px 24px 196px;
 /*
     width: 228px;
     height: 59px;
@@ -118,9 +119,8 @@ header {
 
 .button-login {
     width: 103px;
-    height: 41px;
     padding: 10px 30px;
     font-size: 16px;
     line-height: 21px;
-    margin: 25px 120px 24px 196px;
+    
 }
