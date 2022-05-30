@@ -96,17 +96,16 @@ header {
     font-style: normal;
     font-weight: 500;
     color: #FFFFFF;
-/*
     width: 228px;
     height: 59px;
     padding: 10px 32px;
     font-size: 24px;
     line-height: 32px;
-*/
 }
 
 .button-login {
     width: 103px;
+    height: 41px;
     padding: 10px 30px;
     font-size: 16px;
     line-height: 21px;
@@ -146,7 +145,7 @@ header {
     margin-bottom: 46px;
 }
 
-.serch-form-info {
+.search-form-info {
     max-width: 892px;
     min-width: 560px;
     min-height: 95px;
@@ -156,7 +155,7 @@ header {
     padding: 0;
 }
 
-.serch-form-field {
+.search-form-field {
     min-width: 560px;
     min-height: 22px;
     font-family: 'Aleo';
@@ -170,23 +169,11 @@ header {
     background-color: rgba(0,0,0,0);
 }
 
-.serch-form-field::-webkit-input-placeholder {
+.search-form-field::-webkit-input-placeholder {
     color: #F2785C;
 }
 
-.serch-form-submit {
-    background: #0D606F;
-    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
-    border-radius: 10px;
-    font-family: 'Red Hat Text';
-    font-style: normal;
-    font-weight: 500;
-    color: #FFFFFF;
-    width: 228px;
-    height: 59px;
-    padding: 10px 32px;
-    font-size: 24px;
-    line-height: 32px;
+.search-form-submit {
     white-space: nowrap;
     margin: 18px;
 }
@@ -195,14 +182,7 @@ header {
 
 /*Start steps styles*/
 
-.steps-wrapper {
-    max-width: 1177px;
-    background-color: #ffffff;
-    margin: 0 auto;
-    margin-bottom: 97px;
-}
-
-.steps-title {
+.section-title {
     font-family: Red Hat Text;
     font-size: 40px;
     font-weight: 500;
@@ -234,7 +214,6 @@ header {
     position: relative;
     margin-left: auto;
     margin-right: auto;
-
 }
 
 .steps-card-pic {
@@ -257,3 +236,14 @@ header {
 /*End steps styles*/
 
 /*Start destinations styles*/
+.destinations-cards {
+    display: flex;
+}
+
+.destinations-card {
+    width: 800px;
+    height: 800px;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
