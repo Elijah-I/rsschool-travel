@@ -24,12 +24,10 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    font-family: 'Aleo', serif;
-    font-family: 'Montserrat', sans-serif;
     font-family: 'Red Hat Text', sans-serif;
 }
 
-.container {
+.wrapper {
     max-width: 1440px;
     margin: 0 auto;
     padding: 0px 120px;
@@ -51,7 +49,7 @@ header {
     padding-bottom: 25px;
 }
 
-.header-container {
+.header-wrapper {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
@@ -119,18 +117,19 @@ header {
 
 /*Start main styles*/
 
-.wrapper {
+.preview {
     background: url(./assets/img/preview-bg-image.jpg) no-repeat center;
     background-size: cover;
-    padding: 330px 0;
-    margin: 0;
+    min-height: 100vh;
+    padding-top: 122px;
+    padding-bottom: 80px;
 }
 
 .preview-title {
     font-family: Aleo;
     font-size: 80px;
     font-weight: 700;
-l   line-height: 96px;
+    line-height: 96px;
     color: #ffffff;
     max-width: 892px;
     margin-bottom: 22px;
