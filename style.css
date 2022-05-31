@@ -2,13 +2,6 @@
     box-sizing: border-box;
 }
 
-.header,
-.main , 
-.footer {
-    margin: 0;
-    border: solid red 1px;
-}
-
 ol, ul {
 	list-style: none;
 }
@@ -28,7 +21,7 @@ body {
 }
 
 .wrapper {
-    max-width: 1440px;
+    min-width: 1440px;
     margin: 0 auto;
     padding: 0px 120px;
 }
@@ -47,6 +40,7 @@ header {
     background-color:rgba(242, 120, 92, 0.7);
     box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
     padding-bottom: 25px;
+    z-index: 999;
 }
 
 .header-wrapper {
@@ -121,7 +115,7 @@ header {
     min-height: 100vh;
     padding-top: 122px;
     margin-bottom: 80px;
-    min-height: 765px;;
+    min-height: 765px;
 }
 
 .preview-title {
@@ -236,14 +230,70 @@ header {
 /*End steps styles*/
 
 /*Start destinations styles*/
-.destinations-cards {
+
+.destinations-slides {
+    width: 100%;
     display: flex;
+    justify-content: center;
 }
 
-.destinations-card {
+.destinations-slide {
     width: 800px;
     height: 800px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.destinations-slide:nth-child(2) {
     margin-right: 30px;
     margin-left: 30px;
 }
 
+.destinations-slide-title {
+    font-size: 32px;
+    line-height: 42px;
+    color: white;
+    position: absolute;
+    bottom: 27px;
+    left: 40px;
+}
+
+.destinations-slider-btns {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    margin: 0;
+    margin-top: 45px;
+}
+
+.destinations-slider-btn {
+    width: 20px;
+    height: 20px;
+    color: #F2785C;
+}
+
+.destinations-button {
+    margin: 0 auto;
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+.destinations-button-link {
+    padding: 0;
+    padding-left: 50px;
+    color: #ffffff;
+    transition: .2s all;
+    background: url(./assets/svg/arrow.svg) no-repeat left center;
+}
+
+/*End destinations styles*/
+
+/*Start stories styles*/
+
+.stories-button {
+    margin: 0 auto;
+    display: block;
+}

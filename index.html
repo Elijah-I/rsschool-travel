@@ -76,18 +76,30 @@
         <section class="destinations" id="destinations">
             <div class="wrapper">
                 <h2 class="section-title">POPULAR DESTINATIONS</h2>
-                <div class="destinations-cards">
-                    <div class="destinations-card">
-                        <img src="./assets/img/destinations-image-spain.jpg" alt="Spain picture" class="destinations-card-pic">
+                <div class="destinations-slider">
+                    <div class="destinations-slides">
+                        <figure class="destinations-slide">
+                            <img src="./assets/img/destinations-image-spain.jpg" alt="Spain picture">
+                            <figcaption class="destinations-slide-title">SPAIN</figcaption>
+                        </figure>
+                        <figure class="destinations-slide">
+                            <img src="./assets/img/destinations-image-japan.jpg" alt="Japan picture" class="destinations-card-pic">
+                            <figcaption class="destinations-slide-title">JAPAN</figcaption>
+                        </figure>
+                        <figure class="destinations-slide">
+                            <img src="./assets/img/destinations-image-usa.jpg" alt="USA picture" class="destinations-card-pic">
+                            <figcaption class="destinations-slide-title">USA</figcaption>
+                        </figure>
                     </div>
-                    <div class="destinations-card">
-                        <img src="./assets/img/destinations-image-japan.jpg" alt="Japan picture" class="destinations-card-pic">
-                    </div>
-                    <div class="destinations-card">
-                        <img src="./assets/img/destinations-image-usa.jpg" alt="USA picture" class="destinations-card-pic">
+                    <div class="destinations-slider-btns">
+                        <input type="radio" id="btn-1" name="toggle" class="destinations-slider-btn">
+                        <input type="radio" id="btn-2" name="toggle" class="destinations-slider-btn" checked>
+                        <input type="radio" id="btn-3" name="toggle"class="destinations-slider-btn">
                     </div>
                 </div>
-                <button class="button destinations-button">Find More</button>
+                <button class="button destinations-button">
+                    <a href="#!" class="destinations-button-link">Find More</a>
+                </button>
             </div>
         </section>
         <section class="section" id="stories">
