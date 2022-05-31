@@ -293,7 +293,62 @@ header {
 
 /*Start stories styles*/
 
+.stories {
+    background: url(./assets/img/stories-bg-image.jpg) no-repeat center;
+    background-size: cover;
+    height: 1331px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.stories-wrapper {
+    background:rgba(255, 255, 255, 0.7);
+    background-size: cover;
+    height: 1270px;
+    padding-bottom: 0px;
+}
+
 .stories-button {
     margin: 0 auto;
     display: block;
+}
+
+.stories-tour {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px 40px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.tour-pic {
+    border-radius: 16px;
+}
+
+.tour-title {
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 42px;
+    color: #0D606F;
+}
+
+.tour-desc {
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #0D606F;
+}
+
+.tour-link {
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-decoration-line: underline;
+    color: #0D606F;
 }
