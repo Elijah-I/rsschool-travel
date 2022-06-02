@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
 }
@@ -10,20 +11,34 @@ a {
     text-decoration: none;
 }
 
-body {
-    min-height: 100vh;
+html, body {
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    font-family: 'Red Hat Text', sans-serif;
+    height: 100%;
+    line-height: 1;
+    font-family: 'Aleo';
+    font-weight: 400;
+    font-size: 20px;
+    color: #0D606F;  
 }
 
+.wrapper-full {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 1 auto;
+}
+
+
 .wrapper {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0px 120px;
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 0px 15px;
+    box-sizing: content-box;
 }
 
 html {
@@ -33,7 +48,7 @@ html {
 /*Start header styles*/
 
 header {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -49,6 +64,7 @@ header {
     align-items: flex-end;
     justify-content: space-between;
     padding-top: 25px;
+    min-height: 90px;
 }
 
 .header-list {
