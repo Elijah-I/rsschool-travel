@@ -13,7 +13,7 @@
 </head>
 <body>
     <div class="wrapper-full">
-        <header>
+        <header class="header">
             <div class="wrapper">
                 <div class="header-wrapper">
                     <div class="header-logo">
@@ -38,14 +38,19 @@
         <main class="main">
             <section class="preview" id="preview">
                 <div class="wrapper">
-                    <h1 class="preview-title">Explore the beauty of the World</h1>
-                    <p class="preview-subtitle">Recieve personalized recommendations for countries, hotels, activities and more</p>
-                    <form action="" class="preview-search">
+                    <div class="preview-wrapper">
+                        <h1 class="preview-title">Explore the beauty of the World</h1>
+                        <p class="preview-subtitle">Recieve personalized recommendations for countries, hotels, activities and more</p>
+                        <form action="" class="preview-search">
                         <p class="search-form-info">
                             <input type="text" name="user-like-to-do" class="search-form-field" placeholder="What would you like to do?">
                             <button type='text' class="button search-form-submit">Start Planning</button>
                         </p>
                     </form>
+                    </div>
+                </div>
+                <div class="preview-image _ibg">
+                    <img src="./assets/img/preview-bg-image.jpg" alt="Cover">
                 </div>
             </section>
             <section class="steps" id="steps">
@@ -94,7 +99,7 @@
                         <div class="destinations-slider-btns">
                             <input type="radio" id="btn-1" name="toggle" class="destinations-slider-btn">
                             <input type="radio" id="btn-2" name="toggle" class="destinations-slider-btn" checked>
-                            <input type="radio" id="btn-3" name="toggle"class="destinations-slider-btn">
+                            <input type="radio" id="btn-3" name="toggle" class="destinations-slider-btn">
                         </div>
                     </div>
                     <button class="button destinations-button">
