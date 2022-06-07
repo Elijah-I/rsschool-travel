@@ -100,15 +100,18 @@ html {
     margin-right: 42px;
 }
 
+.header-logo {
+    padding: 0 0 6px 0;
+    margin: 0;
+    align-items: center;
+}
 
 .header-link {
     padding: 0;
-    line-height: 50px;
     font-family: Red Hat Text;
     font-size: 16px;
     font-weight: 500;
     line-height: 21px;
-    letter-spacing: 0em;
     text-align: left;
     color:#ffffff;
 }
@@ -162,7 +165,7 @@ html {
 .preview-wrapper {
     position: relative;
     z-index: 2;
-    padding: 32px 0px 254px 0px;
+    padding: 32px 0px 335px 0px;
 }
 
 /*
@@ -198,7 +201,7 @@ html {
     max-width: 723px;
     color: #ffffff;
     padding: 0;
-    margin-bottom: 46px;
+    margin: 31px 0px 46px 0px;
 }
 
 .search-form-info {
@@ -219,10 +222,11 @@ html {
     font-weight: 400;
     font-size: 24px;
     line-height: 29px;
-    margin-top: 32px;
+    margin-top: 23px;
     margin-left: 41px;
-    border:0 none;
+    border: none;
     background-color: rgba(0,0,0,0);
+    padding: 0;
 }
 
 .search-form-field::-webkit-input-placeholder {
@@ -231,7 +235,7 @@ html {
 
 .search-form-submit {
     white-space: nowrap;
-    margin: 18px;
+    margin: 18px 18px 18px 40px;
 }
 
 /*End preview styles*/
@@ -253,12 +257,12 @@ html {
 .steps-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 10px;
+    grid-column-gap: 60px;
 }
 
 .steps-card {
     grid-column: span 1;
-    margin-bottom: 97px;
+    margin-bottom: 75px;
     text-align: center;
 }
 
@@ -270,6 +274,7 @@ html {
     position: relative;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 16px;
 }
 
 .steps-card-pic {
@@ -287,6 +292,7 @@ html {
     font-weight: 400;
     line-height: 24px;
     color:#0D606F;
+    margin: 30px 0px 20px 0px;
 }
 
 /*End steps styles*/
@@ -297,6 +303,7 @@ html {
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-top: 45px;
 }
 
 .destinations-slide {
@@ -308,8 +315,8 @@ html {
 }
 
 .destinations-slide:nth-child(2) {
-    margin-right: 30px;
-    margin-left: 30px;
+    margin-right: 60px;
+    margin-left: 60px;
 }
 
 .destinations-slide-title {
@@ -317,8 +324,13 @@ html {
     line-height: 42px;
     color: white;
     position: absolute;
-    bottom: 27px;
-    left: 40px;
+    bottom: 40px;
+    left: 15px;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 42px;
 }
 
 .destinations-slider-btns {
