@@ -373,8 +373,8 @@ html {
     background: url(./assets/img/stories-bg-image.jpg) no-repeat center;
     background-size: cover;
     min-height: 100vh;
-    margin-bottom: 0px;
-    padding-bottom: 150px;
+    margin-bottom: -90px;
+    padding-bottom: 90px;
     position: relative;
     z-index: -1;
 }
@@ -383,7 +383,7 @@ html {
     background:rgba(255, 255, 255, 0.7);
     background-size: cover;
     min-height: 100vh;
-    padding-bottom: 0px;
+    padding-bottom: 20px;
 }
 
 .stories-button {
@@ -450,6 +450,9 @@ html {
     color: #0D606F;
 }
 
+.footer {
+
+}
 
 
 .social-item {
