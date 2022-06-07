@@ -119,7 +119,7 @@ html {
 .header-link:hover, .header-link:focus, .header-link:active {
     opacity: 0.75;
     transition: .3s;
-  }
+}
 
 
 .button {
@@ -153,6 +153,7 @@ html {
     margin-top: -90px;
     padding-top: 90px;
 }
+
 
 .preview-image {
     position: absolute;
@@ -367,12 +368,15 @@ html {
 
 /*Start stories styles*/
 
+/*Оборачивает сторис и футер для фонового изображения*/
 .wrapper-bg {
     background: url(./assets/img/stories-bg-image.jpg) no-repeat center;
     background-size: cover;
     min-height: 100vh;
     margin-bottom: 0px;
-    padding-bottom: 0px;
+    padding-bottom: 150px;
+    position: relative;
+    z-index: -1;
 }
 
 .stories {
@@ -445,6 +449,8 @@ html {
     text-decoration-line: underline;
     color: #0D606F;
 }
+
+
 
 .social-item {
     width: 33.65px;
