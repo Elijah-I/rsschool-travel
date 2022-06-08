@@ -356,13 +356,13 @@ html {
     color: #F2785C;
 }
 
+
 .destinations-button {
     margin: 0 auto;
     display: block;
     margin-top: 40px;
     margin-bottom: 80px;
 }
-
 
 .button-title {
     align-items: center;
@@ -373,7 +373,6 @@ html {
     transition: .2s all;
     background: url(./assets/svg/arrow.svg) no-repeat left center;
 }
-
 
 /*End destinations styles*/
 
@@ -467,9 +466,9 @@ html {
 
 .footer-wrapper {
     display: flex;
-    color: #ffffff;
-    justify-content: flex-end;
     vertical-align: middle;
+    justify-content: flex-end;
+    color: #ffffff;
 }
 
 .footer-copirite {
@@ -478,9 +477,9 @@ html {
 
 .social-list {
     display: flex;
-    align-content: center;
     vertical-align: middle;
 }
+
 
 .social-item {
     width: 33.65px;
