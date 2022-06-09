@@ -589,15 +589,22 @@ html {
     align-items: center;
     justify-content: flex-end;
     color: #ffffff;
+    padding: 5px 0 5px 0;
 }
 
 .footer-copirite {
-    margin-right: 308px;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+    margin-right: 310px;
 }
 
 .social-list {
     display: flex;
-    align-items: center;
+    align-items: stretch;
 }
 
 
@@ -609,4 +616,9 @@ html {
 
 .social-link {
     color: #ffffff;
+}
+
+.social-item img {
+    width: 100%;
+    height: 100%;
 }
