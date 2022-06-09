@@ -341,21 +341,27 @@ html {
     line-height: 42px;
 }
 
-.destinations-slider-btns {
-    width: 100%;
+.destinations-btns {
     display: flex;
     justify-content: center;
     cursor: pointer;
     margin: 0;
     margin-top: 45px;
+
 }
 
-.destinations-slider-btn {
+.destinations-btn {
     width: 20px;
     height: 20px;
-    color: #F2785C;
+    background-color: rgba(242, 120, 92, 0.5);
+    border-radius: 50%;
 }
 
+.destinations-btn:nth-child(2) {
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: #F2785C;
+}
 
 .destinations-button {
     margin: 0 auto;
@@ -460,13 +466,13 @@ html {
     color: #0D606F;
 }
 
-.footer {
+/*End stories styles*/
 
-}
+/*Start footer styles*/
 
 .footer-wrapper {
     display: flex;
-    vertical-align: middle;
+    align-items: center;
     justify-content: flex-end;
     color: #ffffff;
 }
@@ -477,7 +483,7 @@ html {
 
 .social-list {
     display: flex;
-    vertical-align: middle;
+    align-items: center;
 }
 
 
