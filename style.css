@@ -263,6 +263,48 @@ html {
 }
 
 .steps-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.steps-card {
+    width: 317px;
+    margin-bottom: 75px;
+    text-align: center;
+}
+
+.steps-card-item {
+    width: 100px;
+    height: 100px;
+    background: #F2785C;
+    border-radius: 10px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 16px;
+}
+
+.steps-card-pic {
+    position: absolute;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.steps-card-desc {
+    font-family: Aleo;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    color:#0D606F;
+    margin: 30px 0px 20px 0px;
+}
+
+/*
+.steps-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 60px;
@@ -302,6 +344,7 @@ html {
     color:#0D606F;
     margin: 30px 0px 20px 0px;
 }
+*/
 
 /*End steps styles*/
 
@@ -346,8 +389,7 @@ html {
     justify-content: center;
     cursor: pointer;
     margin: 0;
-    margin-top: 45px;
-
+    margin-top: 25px;
 }
 
 .destinations-btn {
@@ -374,7 +416,6 @@ html {
     align-items: center;
     padding: 0;
     padding-left: 50px;
-    padding-top: 5px;
     color: #ffffff;
     transition: .2s all;
     background: url(./assets/svg/arrow.svg) no-repeat left center;
@@ -402,12 +443,69 @@ html {
     padding-bottom: 20px;
 }
 
-.stories-button {
-    margin: 0 auto;
-    margin-bottom: 30px;
-    display: block;
+.stories-tours {
+    display: flex;
+    flex-direction: column;
 }
 
+.stories-tour {
+    display: flex;
+    margin: 20px 0 20px 0;
+}
+
+
+.tour-pic {
+    width: 400px;
+    height: 250px;
+    border-radius: 16px;
+}
+
+.tour-pic-1 {
+    background: url(./assets/img/stories-image-1.jpg) no-repeat center;
+}
+
+.tour-pic-2 {
+    background: url(./assets/img/stories-image-2.jpg) no-repeat center;
+}
+
+.tour-pic-3 {
+    background: url(./assets/img/stories-image-3.jpg) no-repeat center;
+}
+
+.tour-pic-4 {
+    background: url(./assets/img/stories-image-4.jpg) no-repeat center;
+}
+
+.tour-info {
+    width: 760px;
+    margin: 0 0 0 40px;
+}
+
+.tour-title {
+    margin-top: 10px;
+}
+
+.tour-desc {
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #0D606F;
+}
+
+.tour-link {
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-decoration-line: underline;
+    color: #0D606F;
+    cursor: pointer;
+}
+
+/*
 .stories-tour {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -464,6 +562,13 @@ html {
     line-height: 24px;
     text-decoration-line: underline;
     color: #0D606F;
+}
+*/
+
+.stories-button {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    display: block;
 }
 
 /*End stories styles*/
