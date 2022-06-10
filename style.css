@@ -75,7 +75,7 @@ html {
 
 .header {
     position: relative;
-    min-height: 72px;
+    min-height: 70px;
     background-color:rgba(242, 120, 92, 0.7);
     box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
     z-index: 5;
@@ -165,9 +165,8 @@ html {
 .preview-image img {
     position: absolute;
     width: 100%;
-    max-height: 765px;
+    height: 765px;
     top: 0;
-    left: 0;
 }
 
 .preview-wrapper {
