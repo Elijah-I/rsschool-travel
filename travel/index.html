@@ -26,8 +26,8 @@
                         <li class="nav__item"><a href="#steps" class="nav__link">Plan Your Trip</a></li>
                         <li class="nav__item"><a href="#destinations" class="nav__link">Destinations</a></li>
                         <li class="nav__item"><a href="#stories" class="nav__link">Travel Stories</a></li>
-                        <li class="nav__item nav__item-hidden"><a href="#stories" class="nav__link">Account</a></li>
-                        <li class="nav__item nav__item-hidden"><a href="#stories" class="nav__link">Social Media</a></li>
+                        <li class="nav__item nav__item-hidden nav__item_account"><a href="#" class="nav__link">Account</a></li>
+                        <li class="nav__item nav__item-hidden"><a href="#social" class="nav__link">Social Media</a></li>
                     </ul>
                     <div class="header__nav-close">
                         <span class="header__nav-close-line"></span>
@@ -65,22 +65,22 @@
                     <h2 class="section__title">3 STEPS TO THE PERFECT TRIP</h2>
                     <div class="steps__cards">
                         <div class="steps__card">
-                            <div class="steps__item">
-                                <img src="./assets/svg/steps-ico-bike.svg" alt="Bike icon" class="steps__pic">
+                            <div class="steps__item steps__item_first">
+                                <img src="./assets/svg/steps-ico-bike.svg" alt="Bike icon" class="steps__pic steps__pic_1">
                             </div>
-                            <p class="steps__desc">Tell us what you want to do</p>
+                            <p class="steps__desc steps__desc_first">Tell us what you want to do</p>
                         </div>
                         <div class="steps__card">
-                            <div class="steps__item">
-                                <img src="./assets/svg/steps-ico-calendar.svg" alt="Calendar icon" class="steps__pic">
+                            <div class="steps__item steps__item_second">
+                                <img src="./assets/svg/steps-ico-calendar.svg" alt="Calendar icon" class="steps__pic steps__pic_2">
                             </div>
-                            <p class="steps__desc">Share us preferable dates </p>
+                            <p class="steps__desc steps__desc_second">Share us preferable dates </p>
                         </div>
                         <div class="steps__card">
-                            <div class="steps__item">
-                                <img src="./assets/svg/steps-ico-airplane.svg" alt="Airplane icon" class="steps__pic">
+                            <div class="steps__item steps__item_third">
+                                <img src="./assets/svg/steps-ico-airplane.svg" alt="Airplane icon" class="steps__pic steps__pic_3">
                             </div>
-                            <p class="steps__desc">We will give you recommendations</p>
+                            <p class="steps__desc steps__desc_third">We will give you recommendations</p>
                         </div>
                     </div>
                 </div>
@@ -93,7 +93,6 @@
                         <div class="slider__slides">
                             <figure class="slider__slide">
                                 <img src="./assets/img/destinations-image-spain.jpg" alt="Spain picture" class="slider__slide-pic">
-                                <!-- <img src="./assets/img/destinations-image-spain.jpg" alt="Spain picture" class="slider__slide-pic ">-->
                                 <figcaption class="slider__slide-title">SPAIN</figcaption>
                             </figure>
                             <figure class="slider__slide">
@@ -104,6 +103,12 @@
                                 <img src="./assets/img/destinations-image-usa.jpg" alt="USA picture" class="slider__slide-pic">
                                 <figcaption class="slider__slide-title">USA</figcaption>
                             </figure>
+                        </div>
+                        <div class="slider__arrows">
+                            <span class="slider__arrow slider__arrow_rigth-1"></span>
+                            <span class="slider__arrow slider__arrow_rigth-2"></span>
+                            <span class="slider__arrow slider__arrow_left-1"></span>
+                            <span class="slider__arrow slider__arrow_left-2"></span>
                         </div>
                         <div class="slider__btns">
                             <div class="slider__btn"></div>
@@ -125,7 +130,7 @@
             </section>
             <!-- Stories start-->
             <section class="stories" id="stories">
-                <h2 class="section__title">TRAVEL STORIES</h2>
+                <h2 class="section__title section__title_stories">TRAVEL STORIES</h2>
                 <div class="stories__wrapper">
                     <div class="_container">
                         <div class="stories__tours">
@@ -170,7 +175,7 @@
             </section>
         </main>
         <!-- Footer start-->
-        <footer class="footer">
+        <footer class="footer" id="social">
             <div class="_container">
                 <div class="footer__copirite">All Rights Reserved © Travel Portal</div>
                 <ul class="footer__source">
