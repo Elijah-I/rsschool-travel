@@ -265,6 +265,18 @@ button:hover, button:focus, button:active {
     transform: translate(0px, 0px);
 }
 
+/* Для JS попапа
+.popup.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup.open .popup__content {
+    opacity: 1;
+    transform: translate(0px, 0px);
+}
+*/
+
 .popup_area {
     position: absolute;
     width: 100%;
