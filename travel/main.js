@@ -13,11 +13,127 @@ document.querySelector('.nav__item_account').addEventListener('click', function(
 document.querySelector('.header__nav').classList.remove('header__nav_active');
 })
 
+
+
+//Попап по видео Фрилансера
+const popupLinks = document.querySelector('.popup-link');
+const body = document.querySelector('body');
+const lockPadding = document.querySelector('.lock-padding');
+
+let unlock = true;
+
+const timeout = 800;
+
+//Ищем все ссылки, которые открывают попап
+if (popupLinks.length > 0) {
+    for ( let i = 0; i < popupLinks.length; i++) {
+        const popupLink = popupLinks[i];
+        popupLink.addEventListener("click", function (e) {
+            const popupName = popupLink.getAttribute('href').replace('#', '');
+            const curentPopup = document.getElementById(popupName);
+            popupOpen(curentPopup); //вызываем попап
+            e.preventDefault(); //блокируем обновление ссылки
+        });
+    }
+}
+
+//Если бы у попапа был крестик или кнопка выхода
+const popupCloseIcon = document.querySelectorAll('.close-popup');
+if (popupCloseIcon.length > 0) {
+    for (let i = 0; i < popupCloseIcon.length; i++) {
+        const el = popupCloseIcon[i];
+        el.addEventListener('click', function (e) {
+            popupClose(el.closest('.popup'));
+            e.preventDefault();
+        });
+    }
+}
+
+//Функция открытия попапа
+function popupOpen (curentPopup) {
+    if (curentPopup && unlock) {
+        const popupActive = document.querySelector('.popup.open');
+        if (popupActive) {
+            popupClose(popupActive, false);
+        } else {
+            bodyLock(); //Блочим сролл
+        }
+        curentPopup.classList.add('open');
+        curentPopup.addEventListener("click", function (e) {
+            //Закрываем при клике на темную область,т.е. если у нажатого объекта нет этого класса
+            if (!e.target.closest('.popup__content')) { 
+                popupClose(e.target.closest('.popup'));
+            }
+        });
+    }
+}
+function popupClose(popupActive, doUnlock = true) {
+    if (unlock) {
+        popupActive.classList.remove('open');
+        if (doUnlock) {
+            bodyUnLock();
+        }
+    }
+}
+
+//Скрываем скролл
+function bodyLock() {
+    const lockPaddingValue = window.innerWidth - document.querySelector('.wrapper').offsetWidth + 'px';
+
+    if (lockPadding.length > 0) {
+        for (let i = 0; i < lockPadding.length; i++) {
+            const el = lockPadding[i];
+            el.style.lockPadding = lockPaddingValue;
+        }
+    }
+    body.style.paddingRight = lockPaddingValue;
+    body.classList.add('lock');
+
+//Блокируем на время открытия попапа
+    unlock = false;
+    setTimeout(function () {
+        unlock = true;
+    }, timeout);
+}
+
+function bodyUnLock() {
+    setTimeout(function () {
+        for (let i = 0; i < lockPadding.length; i++) {
+            const el = lockPadding[i];
+            el.style.paddingRight = '0px';
+        }
+        body.style.paddingRight = '0px';
+        body.classList.remove('lock');
+    }, timeout);
+
+    unlock = false;
+    setTimeout(function () {
+        unlock = true;
+    }, timeout);
+}
+
+document.addEventListener('keydown', function (e) {
+    if (e.wich === 27) {
+        const popupActive = document.querySelector('.popup.open');
+        popupClose(popupActive);
+    }
+});
+
+
+//For inspectors
+console.log('1) Вёрстка соответствует макету. Ширина экрана 390px +48\n2) Ни на одном из разрешений до 320px включительно не появляется горизонтальная полоса прокрутки. Весь контент страницы при этом сохраняется: не обрезается и не удаляется +15\n3) На ширине экрана 390рх и меньше реализовано адаптивное меню +18 из 22, т.к. меню не закрывается, если кликнуть вне него');
+console.log('81/75');
+
+
+
+/*
 //Active pop-up onclick Login
 document.querySelector('.header__btn').addEventListener('click', function(){
-document.querySelector('.popup').classList.add('popup__active');
-})
+    document.querySelector('.popup').classList.add('.popup.open');
+    })
 
+*/
+/*
 function popupOpen(currentPopup) {
 
 currentPopup.classList.add('popup__active');
@@ -38,9 +154,6 @@ if (currentPopup) {
 }
 */
 
-//For inspectors
-console.log('1) Вёрстка соответствует макету. Ширина экрана 390px +48\n2) Ни на одном из разрешений до 320px включительно не появляется горизонтальная полоса прокрутки. Весь контент страницы при этом сохраняется: не обрезается и не удаляется +15\n3) На ширине экрана 390рх и меньше реализовано адаптивное меню +18 из 22, т.к. меню не закрывается, если кликнуть вне него');
-console.log('81/75');
 
 
 
