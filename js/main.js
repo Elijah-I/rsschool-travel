@@ -112,6 +112,29 @@ function slimper($sliderContainer) {
 
 // Destinations slider end
 
+
+/*
+
+const popupRegister = document.getElementById('popup.register');
+
+const toggleRedClass = (element) => {
+    element.classList.toggle('red');
+}
+
+const toggleElementText = (element, text) => {
+    element.innerHTML = text;
+}
+
+const handleClick = (event) => {
+    const element = event.target;
+    toggleRedClass (element);
+    toggleElementText (element, 'Cool text!');
+}
+
+
+popupRegister.addEventListener('click', handleClick)
+
+*/ 
 /*
 const handleClick = (event) => {
     headerNav.classList.add('header__nav_active');
