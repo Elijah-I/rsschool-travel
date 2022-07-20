@@ -27,7 +27,7 @@
                         <li class="nav__item"><a href="#steps" class="nav__link">Plan Your Trip</a></li>
                         <li class="nav__item"><a href="#destinations" class="nav__link">Destinations</a></li>
                         <li class="nav__item"><a href="#stories" class="nav__link">Travel Stories</a></li>
-                        <li class="nav__item nav__item-hidden nav__item_account"><a href="#popup" class="nav__link">Account</a></li>
+                        <li class="nav__item nav__item-hidden"><a href="#popup" class="nav__link">Account</a></li>
                         <li class="nav__item nav__item-hidden"><a href="#social" class="nav__link">Social Media</a></li>
                     </ul>
                     <div class="header__nav-close">
@@ -40,35 +40,35 @@
                     <span class="burger__line burger__line_second"></span>
                     <span class="burger__line burger__line_third"></span>
                 </div>
-                <a href="#popup" class="popup-link button header__btn">Login</a>
                 <!--
-                <button type="submit" class="button header__btn">Login</button>
-                <a href="#popup" class="popup-link">Login (Попап 1)</a>
+                <a href="#popup" class="popup-link button header__btn">Login</a>
                 -->
+                <button type="submit" class="button header__btn">Login</button>
+                
+                
             </div>
         </header>
         <main class="main">
             <!-- Pop-up start-->
-            <div class="popup" id="popup">
+            <div class="popup">
                 <a href="#header" class="popup_area"></a>
                 <div class="popup__body">
                     <div class="popup__content">
-                        <a href="#header" class="popup__close close-popup">Х</a>
                         <h4 class="popup__title">Log in to your account</h4>
-                        <button class="popup__btn popup__btn_facebook ">Sign In with Facebook</button>
-                        <button class="popup__btn popup__btn_google ">Sign In with Facebook</button>
-                        <div class="popup__delimiter">
+                        <button class="popup__btn popup__btn_facebook">Sign In with Facebook</button>
+                        <button class="popup__btn popup__btn_google">Sign In with Google</button>
+                        <div class="popup__delimiter popup__delimiter_block">
                             <b></b>
                             <i>or</i>
                             <b></b>
                         </div>
                         <form class="popup__form" action="post">
                             <div class="popup__form-item">
-                                <label for="email">E-mail</label>
+                                <label>E-mail</label>
                                 <input type="email">
                             </div>
                             <div class="popup__form-item">
-                                <label for="password">Password</label>
+                                <label>Password</label>
                                 <input type="password">
                             </div>
                         </form>
@@ -78,33 +78,7 @@
                             <b></b>
                         </div>
                         <div class="popup__footer">Don’t have an account?
-                            <a href="#popup_2" class="popup__link popup-link">Register</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="popup" id="popup_2">
-                <a href="#header" class="popup_area"></a>
-                <div class="popup__body">
-                    <div class="popup__content">
-                        <a href="#header" class="popup__close close-popup">Х</a>
-                        <h4 class="popup__title">Create account</h4>
-                        <form class="popup__form" action="post">
-                            <div class="popup__form-item">
-                                <label for="email">E-mail</label>
-                                <input type="email">
-                            </div>
-                            <div class="popup__form-item">
-                                <label for="password">Password</label>
-                                <input type="password">
-                            </div>
-                        </form>
-                        <button class="popup__btn popup__btn_sign-in">Sign In</button>
-                        <div class="popup__delimiter">
-                            <b></b>
-                        </div>
-                        <div class="popup__footer">Already have an account?
-                            <a href="#popup" class="popup__link">Log in</a>
+                            <a href="#" id="popup_register" class="popup__link popup_register">Register</a>
                         </div>
                     </div>
                 </div>
@@ -220,8 +194,6 @@
                 </div>
             </section>
 
-
-
             <!-- Stories start-->
             <section class="stories" id="stories">
                 <h2 class="section__title section__title_stories">TRAVEL STORIES</h2>
@@ -297,6 +269,6 @@
         </footer>
     </div>
     <!-- Файл JS -->
-    <script src="./js/main.js"></script>
+    <script src="./js//script.js"></script>
 </body>
 </html>

@@ -1,4 +1,49 @@
+// Burger handler
+const headerNav = document.querySelector('.header__nav')
+const headerBurger = document.querySelector('.header__burger')
+const headerNavClose = document.querySelector('.header__nav-close')
+const navItemAccount = document.querySelector('.nav__item_account')
+
+headerBurger.addEventListener('click', function(){
+    headerNav.classList.add('header__nav_active');
+})
+
+headerNavClose.addEventListener('click', function(){
+    headerNav.classList.remove('header__nav_active');
+})
+
 // Popup RS start
+const headerBtn = document.querySelector('.header__btn');
+const popup = document.querySelector('.popup');
+const popupContent = document.querySelector('.popup__content');
+
+headerBtn.addEventListener('click', function(){
+    popup.classList.add('open');
+    popupContent.classList.add('open.content');
+})
+
+
+const popupRegister = document.querySelector('.popup.register');
+const popupTitle = document.querySelector('.popup__title');
+const popupBtn = document.querySelector('button.popup__btn');
+const popupDelimiter = document.querySelector('.popup__delimiter');
+
+
+popupRegister.addEventListener('click', function(){
+    popupTitle.innerHTML = 'Create account';
+    popupBtn.classList.toggle('block');
+    popupDelimiter.classList.toggle('block');
+})
+
+const handleClick = (event) => {
+    popupBtn.classList.toggle('block');
+}
+
+popupBtn.addEventListener('click', handleClick)
+
+
+
+
 
 // Popup RS end
 
@@ -67,22 +112,29 @@ function slimper($sliderContainer) {
 
 // Destinations slider end
 
-// Burger handler
-document.querySelector('.header__burger').addEventListener('click', function(){
-document.querySelector('.header__nav').classList.add('header__nav_active');
-})
+/*
+const handleClick = (event) => {
+    headerNav.classList.add('header__nav_active');
+    headerNav.classList.remove('header__nav_active');
+};
 
-document.querySelector('.header__nav-close').addEventListener('click', function(){
-document.querySelector('.header__nav').classList.remove('header__nav_active');
+headerBurger.addEventListener('click', handleClick);
+headerNavClose.addEventListener('click', handleClick);
+*/
+
+
+/*
+headerNavClose.addEventListener('click', function(){
+headerNav.classList.remove('header__nav_active');
 })
 
 //Close Account onclick
-document.querySelector('.nav__item_account').addEventListener('click', function(){
-document.querySelector('.header__nav').classList.remove('header__nav_active');
+navItemAccount.addEventListener('click', function(){
+headerNav.classList.remove('header__nav_active');
 })
+*/
 
-
-
+/*
 //Попап по видео Фрилансера
 const popupLinks = document.querySelector('.popup-link');
 const body = document.querySelector('body');
@@ -217,7 +269,7 @@ currentPopup.addEventListener('click', function(e){
 if (currentPopup) {
     const popupActive = document.querySelector('.popup');
     if (popupActive) {
-        pop
+
     }
 }
 }
