@@ -1,4 +1,3 @@
-
 // Burger-menu start
 const headerNav = document.querySelector('.header__nav')
 const headerBurger = document.querySelector('.header__burger')
@@ -11,6 +10,15 @@ headerBurger.addEventListener('click', function(){
 
 headerNavClose.addEventListener('click', function(){
     headerNav.classList.remove('header__nav_active');
+})
+
+// Пытаюсь закрыть меню при клике на область вокруг (не работает)
+const wrapperFull = document.querySelector('.wrapper__full')
+
+wrapperFull.addEventListener('click', (event) => {
+    if (event.target.classList.contains ('wrapper__full')) {
+        headerNav.classList.remove('header__nav_active');
+    }
 })
 // Burger-menu end
 
@@ -40,24 +48,25 @@ const popupTitle = document.querySelector('.popup__title');
 const popupDelimiter = document.querySelector('.popup__delimiter_block');
 const popupBtnFacebook = document.querySelector('.popup__btn_facebook');
 const popupBtnGoogle = document.querySelector('.popup__btn_google');
-
+const popupAccount = document.querySelector('.popup__account');
+const popupForgot = document.querySelector('.popup_forgot');
 
 popupRegister.addEventListener('click', function(){
-    popupTitle.innerHTML = 'Create account';
-    popupRegister.innerHTML = 'Log in';
+    popupTitle.textContent = 'Create account';
+    popupAccount.textContent = 'Already have an account?';
+    popupRegister.textContent = 'Log in';
     popupDelimiter.classList.toggle('block');
     popupBtnFacebook.classList.toggle('block');
     popupBtnGoogle.classList.toggle('block');
+    popupForgot.classList.toggle('block');
 })
 
 // Проблема: пытаюсь поменять текст при клике (не работает)
-popupRegister.addEventListener('click', function(){
-    if (popupTitle === 'Create account') {
-        popupTitle.innerHTML = 'Log in to your account';
-        popupRegister.innerHTML = 'Register';
-    } else {
-        popupTitle.innerHTML = 'Create account';
-        popupRegister.innerHTML = 'Log in';
+popupRegister.addEventListener('click', (event) => {
+    if (popupTitle == 'Create account') {
+        popupTitle.textContent = 'Log in to your account';
+        popupRegister.textContent = 'Register';
+        popupAccount.textContent = 'Don’t have an account?';
     }
 })
 
@@ -69,9 +78,17 @@ popup.addEventListener('click', (event) => {
         popup.classList.add('close');
     }
 })
+
+const someForm = document.querySelector('.some-form');
+someForm.onsubmit = function() {
+    alert('Форма отправлена!');
+    } else {
+    alert ('Упс! Что-то пошло не так!');
+};
 // Popup end
 
 // Destinations slider start
+// Код взять с CodeOpen, пока не понимаю, пытаюсь разобраться
 function slimper($sliderContainer) {
     let $buttonContainer = $sliderContainer.querySelector('.buttons-slider');
     let $dotsContainer = $sliderContainer.querySelector('.dots-list');
